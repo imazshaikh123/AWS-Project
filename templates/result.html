@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Your head content here -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your Score: {{ total_score }}</h1>
+
+      <div id="iqCategory">
+        <p>IQ Category: <span id="category"></span></p>
+      </div>
+    </div>
+
+    <script>
+      // Get the total score from the query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const totalScore = urlParams.get("score");
+
+      // Display the total score on the page
+      const totalScoreElement = document.getElementById("total");
+      totalScoreElement.textContent = totalScore;
+
+      // Determine the IQ category based on the total score
+      let category = "";
+      if (totalScore < 20) {
+        category = "Low IQ";
+      } else if (totalScore >= 20 && totalScore <= 50) {
+        category = "Average IQ";
+      } else if (totalScore > 50 && totalScore <= 80) {
+        category = "Good IQ";
+      } else {
+        category = "Excellent";
+      }
+
+      // Display the IQ category on the page
+      const categoryElement = document.getElementById("category");
+      categoryElement.textContent = category;
+    </script>
+  </body>
+</html>
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IQ Test Result</title>
+    <link rel="stylesheet" href="result.css" />
+    <!-- You can link your custom stylesheet if needed -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your IQ Test Result</h1>
+
+      <!-- Display the total score and IQ category here -->
+      <div id="totalScore">
+        <p>Total Score: <span id="total"></span></p>
+      </div>
+      <div id="iqCategory">
+        <p>IQ Category: <span id="category"></span></p>
+      </div>
+    </div>
+
+    <script>
+      // Get the total score from the query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const totalScore = urlParams.get("score");
+
+      // Display the total score on the page
+      const totalScoreElement = document.getElementById("total");
+      totalScoreElement.textContent = totalScore;
+
+      // Determine the IQ category based on the total score
+      let category = "";
+      if (totalScore < 20) {
+        category = "Low IQ";
+      } else if (totalScore >= 20 && totalScore <= 50) {
+        category = "Average IQ";
+      } else if (totalScore > 50 && totalScore <= 80) {
+        category = "Good IQ";
+      } else {
+        category = "Excellent";
+      }
+
+      // Display the IQ category on the page
+      const categoryElement = document.getElementById("category");
+      categoryElement.textContent = category;
+    </script>
+  </body>
+</html>
+{% endcomment %}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your head content here -->
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            {% csrf_token %}
+            <h1><center>Questions</center></h1>
+            <div class="question1">
+                <p>Question 1: Which number comes next in the sequence: 1, 4, 9, 16, _?</p>
+            </div>
+            <ul class="options">
+                <li class="option"><input type="radio" name="answer1" value="A">A. 25</li>
+                <li class="option"><input type="radio" name="answer1" value="B">B. 36</li>
+                <li class="option"><input type="radio" name="answer1" value="C">C. 49</li>
+                <li class="option"><input type="radio" name="answer1" value="D">D. 64</li>
+            </ul>
+        </div>
+        <div class="question2">
+            <p>Question 2: If all bloops are razzies, and some razzies are lazzies, which statement is true?</p>
+        </div>
+        <ul class="options">
+            <li class="option"><input type="radio" name="answer2" value="A">A. All lazzies are bloops.</li>
+            <li class="option"><input type="radio" name="answer2" value="B">B. Some bloops are lazzies.</li>
+            <li class="option"><input type="radio" name="answer2" value="C">C. No lazzies are bloops.</li>
+            <li class="option"><input type="radio" name="answer2" value="D">D. All razzies are bloops.</li>
+        </ul>
+    </div>
+    <div class="question3">
+        <p>Question 3: If a train travels 150 miles in 2 hours, how fast is it traveling in miles per hour (mph)?</p>
+    </div>
+    <ul class="options">
+        <li class="option"><input type="radio" name="answer3" value="A">A. 75 mph</li>
+        <li class="option"><input type="radio" name="answer3" value="B">B. 125 mph</li>
+        <li class="option"><input type="radio" name="answer3" value="C">C. 150 mph</li>
+        <li class="option"><input type="radio" name="answer3" value="D">D. 300 mph</li>
+    </ul>
+    </div>
+    <div class="question4">
+        <p>Question 4: In a bicycle race, if you overtake the second person, which position are you in?</p>
+    </div>
+    <ul class="options">
+        <li class="option"><input type="radio" name="answer4" value="A">A. First</li>
+        <li class="option"><input type="radio" name="answer4" value="B">B. Second</li>
+        <li class="option"><input type="radio" name="answer4" value="C">C. Third</li>
+        <li class="option"><input type="radio" name="answer4" value="D">D. Fourth</li>
+    </ul>
+    </div>
+    
+    <div class="question5">
+        <p>Question 5: What is the missing number in the sequence: 2, 6, 12, 20, _?
+        </p>
+    </div>
+    <ul class="options">
+        <li class="option"><input type="radio" name="answer5" value="A">A. 30</li>
+        <li class="option"><input type="radio" name="answer5" value="B">B. 24</li>
+        <li class="option"><input type="radio" name="answer5" value="C">C. 32</li>
+        <li class="option"><input type="radio" name="answer5" value="D">D. 36</li>
+    </ul>
+    </div>
+    <div class="question6">
+        <p>Question 6:How many degrees are there in the sum of the internal angles of a hexagon?
+        </p>
+    </div>
+    <ul class="options">
+        <li class="option"><input type="radio" name="answer6" value="A">A. 120 Degrees</li>
+        <li class="option"><input type="radio" name="answer6" value="B">B. 180 Degrees</li>
+        <li class="option"><input type="radio" name="answer6" value="C">C. 360 Degrees</li>
+        <li class="option"><input type="radio" name="answer6" value="D">D. 720 Degrees</li>
+    </ul>
+    </div>
+    <div class="question7">
+        <p>Question 7:If you fold a piece of paper in half, and then fold it in half again, how many total sections does it have?
+        </p>
+    </div>
+    <ul class="options">
+        <li class="option"><input type="radio" name="answer7" value="A">A. 2</li>
+        <li class="option"><input type="radio" name="answer7" value="B">B. 3</li>
+        <li class="option"><input type="radio" name="answer7" value="C">C. 4</li>
+        <li class="option"><input type="radio" name="answer7" value="D">D. 6</li>
+    </ul>
+    </div>
+    <div class="question8">
+        <p>Question 8: If 3 people can paint 4 houses in 6 days, how many people are needed to paint 10 houses in 9 days?
+        </p>
+    </div>
+    <ul class="options">
+        <li class="option"><input type="radio" name="answer8" value="A">A. 5</li>
+        <li class="option"><input type="radio" name="answer8" value="B">B. 6</li>
+        <li class="option"><input type="radio" name="answer8" value="C">C. 7</li>
+        <li class="option"><input type="radio" name="answer8" value="D">D. 8</li>
+    </ul>
+    </div>
+    <div class="question9">
+        <p>Question 9: Which of the following is a palindrome?
+        </p>
+    </div>
+    <ul class="options">
+        <li class="option"><input type="radio" name="answer9" value="A">A. Racecar</li>
+        <li class="option"><input type="radio" name="answer9" value="B">B. Bicycle</li>
+        <li class="option"><input type="radio" name="answer9" value="C">C. Motorcycle</li>
+        <li class="option"><input type="radio" name="answer9" value="D">D. Airplane</li>
+    </ul>
+    </div>
+    <div class="question10">
+        <p>Question 10: If you rearrange the letters "CIFAIPC," you get a name of a(n):</p>
+    </div>
+    <ul class="options">
+        <li class="option"><input type="radio" name="answer10" value="A">A. Animal</li>
+        <li class="option"><input type="radio" name="answer10" value="B">B. Ocean</li>
+        <li class="option"><input type="radio" name="answer10" value="C">C. River</li>
+        <li class="option"><input type="radio" name="answer10" value="D">D. Country</li>
+    </ul> 
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function calculateScore() {
+            // Initialize a variable to keep track of the total score.
+            let totalScore = 0;
+    
+            // Define the correct answers and their scores.
+            const correctAnswers = {
+                answer1: "B",
+                answer2: "B",
+                answer3: "C",
+                answer4: "B",
+                answer5: "C",
+                answer6: "C",
+                answer7: "D",
+                answer8: "A",
+                answer9: "A",
+                answer10: "B",
+            };
+    
+            // Loop through the questions and check the selected answers.
+            for (let i = 1; i <= 10; i++) {
+                const selectedAnswer = document.querySelector(`input[name="answer${i}"]:checked`);
+                if (selectedAnswer) {
+                    const questionName = `answer${i}`;
+                    const selectedValue = selectedAnswer.value;
+                    if (selectedValue === correctAnswers[questionName]) {
+                        totalScore += 10;
+                    }
+                }
+            }
+    
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ Test</title>
+    <link rel="stylesheet" href="Questions.css">
+    <style>
+        body {
+            background-image: url('iq1.jpeg'); /* Replace 'your-image.jpg' with the correct path or URL to your image */
+            background-size: cover; /* Adjust the size property as needed */
+            background-repeat: no-repeat; /* Ensure the image is not repeated */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <form action="/result" method="post">
+        <h1><center>Questions</center></h1>
+        <div class="question1">
+            <p>Question 1: Which number comes next in the sequence: 1, 4, 9, 16, _?</p>
+        </div>
+        <ul class="options">
+            <li class="option"><input type="radio" name="answer1" value="A">A. 25</li>
+            <li class="option"><input type="radio" name="answer1" value="B">B. 36</li>
+            <li class="option"><input type="radio" name="answer1" value="C">C. 49</li>
+            <li class="option"><input type="radio" name="answer1" value="D">D. 64</li>
+        </ul>
+    </div>
+    <div class="question2">
+        <p>Question 2: If all bloops are razzies, and some razzies are lazzies, which statement is true?</p>
+    </div>
+    <ul class="options">
+        <li class="option"><input type="radio" name="answer2" value="A">A. All lazzies are bloops.</li>
+        <li class="option"><input type="radio" name="answer2" value="B">B. Some bloops are lazzies.</li>
+        <li class="option"><input type="radio" name="answer2" value="C">C. No lazzies are bloops.</li>
+        <li class="option"><input type="radio" name="answer2" value="D">D. All razzies are bloops.</li>
+    </ul>
+</div>
+<div class="question3">
+    <p>Question 3: If a train travels 150 miles in 2 hours, how fast is it traveling in miles per hour (mph)?</p>
+</div>
+<ul class="options">
+    <li class="option"><input type="radio" name="answer3" value="A">A. 75 mph</li>
+    <li class="option"><input type="radio" name="answer3" value="B">B. 125 mph</li>
+    <li class="option"><input type="radio" name="answer3" value="C">C. 150 mph</li>
+    <li class="option"><input type="radio" name="answer3" value="D">D. 300 mph</li>
+</ul>
+</div>
+<div class="question4">
+    <p>Question 4: In a bicycle race, if you overtake the second person, which position are you in?</p>
+</div>
+<ul class="options">
+    <li class="option"><input type="radio" name="answer4" value="A">A. First</li>
+    <li class="option"><input type="radio" name="answer4" value="B">B. Second</li>
+    <li class="option"><input type="radio" name="answer4" value="C">C. Third</li>
+    <li class="option"><input type="radio" name="answer4" value="D">D. Fourth</li>
+</ul>
+</div>
+
+<div class="question5">
+    <p>Question 5: What is the missing number in the sequence: 2, 6, 12, 20, _?
+    </p>
+</div>
+<ul class="options">
+    <li class="option"><input type="radio" name="answer5" value="A">A. 30</li>
+    <li class="option"><input type="radio" name="answer5" value="B">B. 24</li>
+    <li class="option"><input type="radio" name="answer5" value="C">C. 32</li>
+    <li class="option"><input type="radio" name="answer5" value="D">D. 36</li>
+</ul>
+</div>
+<div class="question6">
+    <p>Question 6:How many degrees are there in the sum of the internal angles of a hexagon?
+    </p>
+</div>
+<ul class="options">
+    <li class="option"><input type="radio" name="answer6" value="A">A. 120 Degrees</li>
+    <li class="option"><input type="radio" name="answer6" value="B">B. 180 Degrees</li>
+    <li class="option"><input type="radio" name="answer6" value="C">C. 360 Degrees</li>
+    <li class="option"><input type="radio" name="answer6" value="D">D. 720 Degrees</li>
+</ul>
+</div>
+<div class="question7">
+    <p>Question 7:If you fold a piece of paper in half, and then fold it in half again, how many total sections does it have?
+    </p>
+</div>
+<ul class="options">
+    <li class="option"><input type="radio" name="answer7" value="A">A. 2</li>
+    <li class="option"><input type="radio" name="answer7" value="B">B. 3</li>
+    <li class="option"><input type="radio" name="answer7" value="C">C. 4</li>
+    <li class="option"><input type="radio" name="answer7" value="D">D. 6</li>
+</ul>
+</div>
+<div class="question8">
+    <p>Question 8: If 3 people can paint 4 houses in 6 days, how many people are needed to paint 10 houses in 9 days?
+    </p>
+</div>
+<ul class="options">
+    <li class="option"><input type="radio" name="answer8" value="A">A. 5</li>
+    <li class="option"><input type="radio" name="answer8" value="B">B. 6</li>
+    <li class="option"><input type="radio" name="answer8" value="C">C. 7</li>
+    <li class="option"><input type="radio" name="answer8" value="D">D. 8</li>
+</ul>
+</div>
+<div class="question9">
+    <p>Question 9: Which of the following is a palindrome?
+    </p>
+</div>
+<ul class="options">
+    <li class="option"><input type="radio" name="answer9" value="A">A. Racecar</li>
+    <li class="option"><input type="radio" name="answer9" value="B">B. Bicycle</li>
+    <li class="option"><input type="radio" name="answer9" value="C">C. Motorcycle</li>
+    <li class="option"><input type="radio" name="answer9" value="D">D. Airplane</li>
+</ul>
+</div>
+<div class="question10">
+    <p>Question 10: If you rearrange the letters "CIFAIPC," you get a name of a(n):</p>
+</div>
+<ul class="options">
+    <li class="option"><input type="radio" name="answer10" value="A">A. Animal</li>
+    <li class="option"><input type="radio" name="answer10" value="B">B. Ocean</li>
+    <li class="option"><input type="radio" name="answer10" value="C">C. River</li>
+    <li class="option"><input type="radio" name="answer10" value="D">D. Country</li>
+</ul>
+<button onclick="calculateScore()">Submit</button>
+</div>
+</form>
+</div>
+<script>
+    function calculateScore() {
+        // Initialize a variable to keep track of the total score.
+        let totalScore = 0;
+
+        // Define the correct answers and their scores.
+        const correctAnswers = {
+            answer1: "B",
+            answer2: "B",
+            answer3: "C",
+            answer4: "B",
+            answer5: "C",
+            answer6: "C",
+            answer7: "D",
+            answer8: "A",
+            answer9: "A",
+            answer10: "B",
+        };
+
+        // Loop through the questions and check the selected answers.
+        for (let i = 1; i <= 10; i++) {
+            const selectedAnswer = document.querySelector(`input[name="answer${i}"]:checked`);
+            if (selectedAnswer) {
+                const questionName = `answer${i}`;
+                const selectedValue = selectedAnswer.value;
+                if (selectedValue === correctAnswers[questionName]) {
+                    totalScore += 10;
+                }
+            }
+        }
+        window.location.href = `result.html?score=${totalScore}`;
+    }
+</script>
+
+</body>
+</html> {% endcomment %}

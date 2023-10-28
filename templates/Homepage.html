@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with Login/Register</title>
+    <style>
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .login-button,
+      .register-button {
+        float: right;
+      }
+
+      body {
+        background-image: url("cover-20-850x491.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+    {% load static %}
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">About</a>
+      <a class="login-button" href="/register">Login/Register</a>
+    </div>
+  </body>
+</html>

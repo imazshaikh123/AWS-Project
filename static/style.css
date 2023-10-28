@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('IQ-background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 5px;
+    margin-left: 175px;
+    margin-top: 20px;
+    margin-right: 175px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    margin: 30px 0;
+    height: 50px;
+    background: transparent;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px ;
+}
+
+
+.input-box input::placeholder{
+    color: beige;
+}
+.input-box i {
+    position: relative;
+    left: 370px;
+    top: -38px;
+    font-size: 24px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -15px 0 15px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+.remember-forgot label input{
+    accent-color: beige;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    text-decoration: none;
+    font-size: 12px;
+    color: beige;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+ .wrapper .btn {
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: 800;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: beige;
+    color: black;
+    margin: 10px 0;
+    align-self: center;
+ }
+
+ .wrapper .register-link{
+    font: size 16px;
+    text-align: center;
+    margin: top 20px;
+
+ }
+.register-link p a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover {
+    text-decoration: underline;
+}
