@@ -12,7 +12,8 @@
     {% load static %}
   </head>
   <body>
-    <div class="wrapper">
+    <center>
+      <div class="wrapper">
       <form action="/questions" method="post">
         {% csrf_token %}
         <h1>Register</h1>
@@ -44,5 +45,7 @@
         <button type="submit" class="btn btn-primary">Register</button>
       </form>
     </div>
+  </center>
+
   </body>
 </html>
